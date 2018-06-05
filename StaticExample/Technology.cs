@@ -19,7 +19,8 @@ namespace StaticExample {
 		public int Id { get; set; }
 		public string Name { get; set; }
 		public DifficultyType Difficulty { get; set; }
-										   //creating a method that we can run on constructors so that we don't have to repeat code
+
+		 //creating a method that we can run on constructors so that we don't have to repeat code
 		private void Initialization() {
 			this.Id = ++Counter;  //this sets a new Id every time a new class is instantiated
 			this.Difficulty= Difficulty;  //sets the difficulty to 3 as a default
